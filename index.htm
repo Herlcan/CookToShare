@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Reset default styling */
+* {
+    box-sizing: border-box;
+}
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #F1F5A8;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    padding: 50px;
+    text-align: center;
+    background-image: url('https://images.lifestyleasia.com/wp-content/uploads/sites/2/2024/02/08140719/filipino-restaurants-hong-kong-1600x900.jpg');
+    background-size: cover;
+    color: #f5f7cf;
+    border-radius:10px;
+}
+
+.title {
+    font-size: 60px;
+}
+
+.subtitle {
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.description {
+    font-size: 20px;
+}
+
+/* Navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #B2B377;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+/* Dropdown */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F1F5A8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 8px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #E5E483;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #D2D180;
+    color: black;
+}
+
+
+.social-icon {
+    float: center;
+    height: 50px;
+}
+
+/* Content layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-column {
+    width: 75%;
+    padding-right: 20px;
+    height: 1300px; /* Fixed height for scrollable content */
+    overflow: auto; /* Enable scrolling */
+}
+
+.right-column {
+    width: 25%;
+    background-color: #E5E483;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    color: #000;
+    background-color: #D2D180;
+    text-decoration: none;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* For hover effect */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.card-link {
+    text-decoration: none;
+    color: #000;
+}
+
+.image {
+    width: 100%;
+    height: 290px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+    background-color: #B2B377;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.footer p {
+    margin: 5px 0;
+}
+
+/* Responsive design */
+@media screen and (max-width: 800px) {
+    .left-column, .right-column {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+    <!-- Header/Blog Title -->
+    <header class="header">
+        <h1 class="title">Cook to Share</h1>
+        <h2 class="subtitle">Filipino Style</h2>
+        <p class="description">A taste like no other</p>
+    </header>
+
+    <!-- Top Navigation -->
+  <nav class="topnav">
+    <a href="./index.htm">Home</a>
+    <div class="dropdown">
+        <button class="dropbtn">Category</button>
+        <div class="dropdown-content">
+            <a href="./breakfast.htm">Breakfast</a>
+            <a href="./Lunch.htm">Lunch</a>
+            <a href="./Appetizers.htm">Appetizers</a>
+            <a href="./Dessert.htm">Dessert</a>
+            <a href="./Dinner.htm">Dinner</a>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Content -->
+    <h1>Home</h1>
+    <div class="content row">
+        <div class="left-column">
+            <a href="./Adobo.htm" class="card-link">
+                <div class="card">
+                <h2>Adobo</h2>
+                <h5>Published May 10, 2024</h5>
+                <img src="https://stemandspoon.com/wp-content/uploads/2022/04/Filipino-chicken-adobo-recipe-hero-720x540.jpg" alt="Recipe Image" class="image">
+                <p>Philippine adobo is a popular Filipino dish and cooking process in Philippine cuisine. In its base form, meat, seafood, or vegetables are first browned in oil, and then marinated and simmered in vinegar, salt and/or soy sauce, and garlic</p>
+                </div>
+            </a>
+
+            <a href="./OmeletteWithBaconGarlic.htm" class="card-link">
+                <div class="card">
+                <h2>Omelette with Bacon and Garlic</h2>
+                <h5>Published May 10, 2024</h5>
+                <img src="https://images.eatsmarter.com/sites/default/files/styles/1600x1200/public/crispy-bacon-with-vegetable-omelette-507343.jpg" alt="Recipe Image" class="image">
+                <p>This omelet is big enough to serve four, but it still has the merits of an individual omelet: tender not tough eggs and a hearty filling that doesn't weigh down the eggs.</p>
+                </div>
+            </a>
+
+            <a href="./Tapsilog.htm" class="card-link">
+                <div class="card">
+                    <h2>Tapsilog</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://www.kwoklynwan.com/_webedit/cached-images/104.jpg" alt="Recipe Image" class="image">
+                    <p>Tapsilog, a popular Filipino meal, is a portmanteau of the dish’s three components: tapa (beef), sinangag (garlic fried rice), and itlog (fried egg). It’s one of many variations of silog (garlic fried rice plus fried egg), others of which include tosilog (made with pork), bangsilog (fish), and Spamsilog (Spam).</p>
+                </div>
+            </a>
+
+            <a href="./EggplantOmelette.htm" class="card-link">
+                <div class="card">
+                    <h2>Eggplant Omelette</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://staticcookist.akamaized.net/wp-content/uploads/sites/22/2020/07/mela-1200x675.jpg" alt="Recipe Image" class="image">
+                    <p>Tortang talong, also known as eggplant omelette, is an omelette or fritter from Filipino cuisine made by pan-frying grilled whole eggplants dipped in an egg mixture. It is a popular breakfast and lunch meal in the Philippines.</p>
+                </div>
+            </a>
+
+            <a href="PinoyChickenCurry.htm" class="card-link">
+                <div class="card">
+                    <h2>Pinoy Chicken Curry</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://images.aws.nestle.recipes/original/d7328624d5c5f9308aa934db8007a6bc_chicken_curry.png" alt="Recipe Image" class="image">
+                    <p>This Pinoy Chicken Curry recipe is the Filipino version of the popular chicken curry dish. It is delicious and easy to cook. The sauce is rich, creamy, and flavorful. It goes well with warm white rice.</p>
+                </div>
+            </a>
+
+            <a href="./GinataangHipon.htm" class="card-link">
+                <div class="card">
+                    <h2>Ginataang Hipon, Sitaw at Kalabasa</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://images.aws.nestle.recipes/resized/a4444994982213b202b5075fcf3665a1_nks_b05_s2-d062696_944_531.jpg" alt="Recipe Image" class="image">
+                    <p>Ginataang Kalabasa, Sitaw at Hipon is a Filipino vegetable stew made with kabocha squash, shrimp, and long beans cooked in coconut milk. It's creamy, spicy, and delicious with steamed rice!</p>
+                </div>
+            </a>
+
+            <a href="./ChickenMacaroniSalad.htm" class="card-link">
+                <div class="card">
+                    <h2>Chicken Macaroni Salad</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://scm-assets.constant.co/scm/unilever/e9dc924f238fa6cc29465942875fe8f0/dad88f34-c15c-4955-8ec0-0403bf8f8796.jpg" alt="Recipe Image" class="image">
+                    <p>Try this easy chicken macaroni salad recipe, loaded with shredded chicken, onions, carrots, and bell peppers. With a little sweet surprise from raisins and pineapple tidbits. Perfect as a side dish or even as a snack.</p>
+                </div>
+            </a>
+
+            <a href="./LoadedNachosWithCornedBeef.htm" class="card-link">
+                <div class="card">
+                    <h2>Loaded Nachos with Corned Beef</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://www.tastingtable.com/img/gallery/level-up-your-leftover-corned-beef-and-make-nachos/intro-1712002059.jpg" alt="Recipe Image" class="image">
+                    <p>Nachos are not like any other nachos you’ve tried before, as they are made with crispy and golden brown potato chips, topped with tender and juicy corned beef, melted cheese, and a variety of other toppings that will leave you craving for more.</p>
+                </div>
+            </a>
+
+            <a href="./Siomai.htm" class="card-link">
+                <div class="card">
+                    <h2>Siomai</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://pinoybites.com/wp-content/uploads/2020/10/Pork-and-Shrimp-Siomai-6-768x1024.jpg" alt="Recipe Image" class="image">
+                    <p>Your favorite mouth-watering steamed pork and shrimp siomai, matched with a uniquely concocted chili-garlic sauce that makes it more scrumptious. Every bite feels like home!</p>
+                </div>
+            </a>
+
+            <a href="./PeachMangoPie.htm" class="card-link">
+                <div class="card">
+                    <h2>Peach Mango Pie (Air Fryer)</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://amiablefoods.com/wp-content/uploads/peach-mango-pie-recipe-card-500x375.jpg" alt="Recipe Image" class="image">
+                    <p>Peach Mango Pie with mouth-watering tropical filling and golden, flaky pie crust. Enjoy Jollibee’s popular pocket pie at home with this homemade recipe.</p>
+                </div>
+            </a>
+
+            <a href="./UbeHalaya.htm" class="card-link">
+                <div class="card">
+                    <h2>Ube Halaya with Cheese</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://www.createwithnestle.ph/sites/default/files/srh_recipes/c40a2457572d35d48af2eafa4f93e379.jpg" alt="Recipe Image" class="image">
+                    <p>Halayang Ube (Ube Halaya) is a classic Filipino delicacy made of purple yam, coconut milk, and butter. Creamy, cheesy, and topped with golden latik, it's delicious as a snack or dessert.</p>
+                </div>
+            </a>
+
+            <a href="./LecheFlan.htm" class="card-link">
+                <div class="card">
+                    <h2>Leche Flan</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://iankewks.com/wp-content/uploads/2022/12/IMG_4534-500x375.jpg" alt="Recipe Image" class="image">
+                    <p>Leche Flan is a traditional Filipino dessert influenced by Spanish history. Served during special occasions, this dessert is rich and decadent that melts in your mouth!</p>
+                </div>
+            </a>
+
+            <a href="./ChickenBinagoongan.htm" class="card-link">
+                <div class="card">
+                    <h2>Chicken Binagoongan</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://www.ajinomoto.com.ph/web/wp-content/uploads/2020/07/Pork-Binagoongan.jpg" alt="Recipe Image" class="image">
+                    <p>Chicken Binagoongan is a Filipino chicken dish, made by adding fried chicken and fried eggplant to sautéed paste of onions, garlic, ginger, tomatoes, and shrimp paste. If you prefer chicken than pork, this recipe is for you! Tender chicken chunks coated with the savoury alamang sauce served on top of hot steaming rice, craving for this over and over again.</p>
+                </div>
+            </a>
+
+            <a href="./PininyahangManok.htm" class="card-link">
+                <div class="card">
+                    <h2>Malapot na Pininyahang Manok</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://api.lifegetsbetter.ph/uploads/recipes/featured/chunky-pininyahang-manok-featured.jpg" alt="Recipe Image" class="image">
+                    <p>Pininyahang Manok is a Filipino-style chicken stew with pineapple and all-purpose cream. It's easy to make in one pan and 30 minutes. Moist and flavorful with creamy and tangy flavors, it's sure to be a family favorite.</p>
+                </div>
+            </a>
+
+            <a href="./FilipinoStyleEscabeche.htm" class="card-link">
+                <div class="card">
+                    <h2>Filipino Style Escabeche</h2>
+                    <h5>Published May 10, 2024</h5>
+                    <img src="https://panlasangpinoy.com/wp-content/uploads/2022/08/fish-escabeche.jpg" alt="Recipe Image" class="image">
+                    <p>Try this easy recipe for a colorful, tangy-sweet Filipino Escabeche or Sweet and Sour Fish and bring your plain fried fish to the next level of goodness.</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Right Column -->
+        <aside class="right-column">
+          <a href="./About.htm" class="card-link">
+            <div class="card">
+                <h3>About Us</h3>
+                <p>Learn more about the author and the purpose of this platform...</p>
+          </a>
+            </div>
+          <a href="./PopularRecipes.htm" class="card-link">
+            <div class="card">
+                <h3>Popular Recipes</h3>
+                <p>Lists of the top 5 most popular Filipino recipes...</p>
+            </div>
+          </a>
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>Contact Us</h2>
+        <p>Email: info@cooktoshare.com</p>
+        <img src="./social.png" class="social-icon">
+        <p>Cook To Share</p>
+    </footer>
+
+</body>
+</html>
